@@ -64,6 +64,34 @@ Details and the leakage-safeguard table: [docs/METHODOLOGY.md](docs/METHODOLOGY.
 *Mean right − left log band power for participant 3 (z-scored for display). Interpolated between electrode positions (black dots; template positions, not measured).
 Mu power is lower over the left sensorimotor area and higher over the right for right-hand imagery — the expected contralateral pattern, and a sanity check on label and layout orientation.*
 
+## Screenshots of the dashboard
+
+Captured from the running Streamlit app (`streamlit run app.py`) on the real BCI Competition IV 2a data (participant 1, session T unless stated).
+
+**1. Dataset overview** - participant, channels, sampling rate, trial counts per class, rejected trials with reasons, and data-validation messages (the documented between-run gaps are reported, never silently filled).
+
+![Dataset overview](docs/screenshots/01_dataset_overview.png)
+
+**2. Signal exploration** - EEG traces of selected channels and time window, amplitude distribution and power spectral density.
+
+![Signal exploration](docs/screenshots/02_signal_exploration.png)
+
+**3. Raw vs processed** - the same segment before and after the documented zero-phase 4-40 Hz band-pass.
+
+![Raw vs processed](docs/screenshots/03_raw_vs_processed.png)
+
+**4. Spatial EEG** - electrode layout (template positions, azimuthal projection), the interpolated 16x16 grid and right-minus-left band-power maps. Every coloured pixel is interpolated.
+
+![Spatial EEG](docs/screenshots/04_spatial_eeg.png)
+
+**5. Model comparison** - saved experiment results per participant for the majority baseline, band-power logistic regression, CSP + LDA and the CNN, with the evaluation protocol stated.
+
+![Model comparison](docs/screenshots/05_model_comparison.png)
+
+**6. Prediction** - a model trained without participant 1 predicts a recording through the same validated pipeline as the command line; scores are not probabilities and the page states that this is a research demo.
+
+![Prediction](docs/screenshots/06_prediction.png)
+
 ## Install
 
 Python 3.10+ declared; developed and tested only on Python 3.11.9, Windows 11, CPU.
