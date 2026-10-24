@@ -1,0 +1,26 @@
+{
+ "4-40Hz": {
+  "zero_phase": {
+   "energy_fraction_before_pre_window_end": 2.7200843967161386e-06,
+   "max_abs_before_pre_window_end_relative_to_peak": 0.0006866595050331631,
+   "earliest_sample_with_1pct_of_peak_s_before_event": 0.212
+  },
+  "causal": {
+   "energy_fraction_before_pre_window_end": 0.0,
+   "max_abs_before_pre_window_end_relative_to_peak": 0.0,
+   "earliest_sample_with_1pct_of_peak_s_before_event": 0.0
+  }
+ },
+ "8-30Hz": {
+  "zero_phase": {
+   "energy_fraction_before_pre_window_end": 2.1823548721694416e-07,
+   "max_abs_before_pre_window_end_relative_to_peak": 0.0003285496134784268,
+   "earliest_sample_with_1pct_of_peak_s_before_event": 0.228
+  },
+  "causal": {
+   "energy_fraction_before_pre_window_end": 0.0,
+   "max_abs_before_pre_window_end_relative_to_peak": 0.0,
+   "earliest_sample_with_1pct_of_peak_s_before_event": 0.0
+  }
+ }
+}

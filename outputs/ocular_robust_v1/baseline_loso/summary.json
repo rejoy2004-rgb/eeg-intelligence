@@ -1,0 +1,324 @@
+{
+  "run_name": "baseline_loso",
+  "status": "exploratory",
+  "created_utc": "2026-10-24T12:55:39+00:00",
+  "notes": "ocular_robust_v1 strategy=baseline; design frozen in configs/ocular_robust_v1.yaml",
+  "aggregate": {
+    "loso": {
+      "csp_lda": {
+        "n_splits": 9,
+        "accuracy": {
+          "mean": 0.6327396746064234,
+          "std": 0.14866070878017643,
+          "min": 0.4892086330935252,
+          "max": 0.9548872180451128,
+          "n": 9
+        },
+        "balanced_accuracy": {
+          "mean": 0.6316032091429384,
+          "std": 0.14961286139937893,
+          "min": 0.4910455486542443,
+          "max": 0.9549977385798282,
+          "n": 9
+        },
+        "f1": {
+          "mean": 0.5163783052048552,
+          "std": 0.27652462266621036,
+          "min": 0.08571428571428572,
+          "max": 0.9545454545454547,
+          "n": 9
+        },
+        "roc_auc": {
+          "mean": 0.7192025825852828,
+          "std": 0.1780656274350129,
+          "min": 0.504562934052689,
+          "max": 0.9915196743554953,
+          "n": 9
+        },
+        "precision": {
+          "mean": 0.7127738728661488,
+          "std": 0.17630840652359928,
+          "min": 0.4852941176470588,
+          "max": 0.9836065573770492,
+          "n": 9
+        },
+        "recall": {
+          "mean": 0.49007384294691203,
+          "std": 0.34485573875944814,
+          "min": 0.04580152671755725,
+          "max": 0.9910714285714286,
+          "n": 9
+        },
+        "specificity": {
+          "mean": 0.7731325753389651,
+          "std": 0.2932009054498091,
+          "min": 0.07339449541284404,
+          "max": 0.9926470588235294,
+          "n": 9
+        },
+        "pooled_confusion_matrix": [
+          [
+            922,
+            243
+          ],
+          [
+            618,
+            563
+          ]
+        ]
+      },
+      "logreg": {
+        "n_splits": 9,
+        "accuracy": {
+          "mean": 0.5763803795809452,
+          "std": 0.05395604967109335,
+          "min": 0.4908424908424908,
+          "max": 0.6691729323308271,
+          "n": 9
+        },
+        "balanced_accuracy": {
+          "mean": 0.5749411642772463,
+          "std": 0.05381995871268994,
+          "min": 0.49009661835748797,
+          "max": 0.6686454093170511,
+          "n": 9
+        },
+        "f1": {
+          "mean": 0.5531604516439281,
+          "std": 0.13741667926422801,
+          "min": 0.2823529411764706,
+          "max": 0.7000000000000001,
+          "n": 9
+        },
+        "roc_auc": {
+          "mean": 0.6138873864758609,
+          "std": 0.08022683607380557,
+          "min": 0.5064412238325282,
+          "max": 0.7467774762550882,
+          "n": 9
+        },
+        "precision": {
+          "mean": 0.5851632125246646,
+          "std": 0.057619230694001745,
+          "min": 0.4830508474576271,
+          "max": 0.675,
+          "n": 9
+        },
+        "recall": {
+          "mean": 0.5688835646453199,
+          "std": 0.222892494514103,
+          "min": 0.183206106870229,
+          "max": 0.875,
+          "n": 9
+        },
+        "specificity": {
+          "mean": 0.5809987639091728,
+          "std": 0.17533577811564108,
+          "min": 0.3577981651376147,
+          "max": 0.8872180451127819,
+          "n": 9
+        },
+        "pooled_confusion_matrix": [
+          [
+            687,
+            478
+          ],
+          [
+            518,
+            663
+          ]
+        ]
+      },
+      "paired_comparisons": {
+        "csp_lda_vs_logreg": {
+          "mean_difference_balanced_accuracy": 0.056662044865692276,
+          "wilcoxon_p_two_sided": 0.359375,
+          "n_pairs": 9
+        }
+      }
+    }
+  },
+  "n_trials_total": 2346,
+  "class_counts": {
+    "0": 1165,
+    "1": 1181
+  },
+  "label_mapping": {
+    "0": "left hand",
+    "1": "right hand"
+  },
+  "config": {
+    "dataset": {
+      "name": "BCI Competition IV Dataset 2a (Graz)",
+      "raw_dir": "data/raw/bci_iv_2a",
+      "labels_dir": "data/raw/labels_2a",
+      "subjects": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "sessions": [
+        "T",
+        "E"
+      ],
+      "expected_sfreq": 250.0,
+      "n_eeg_channels": 22,
+      "n_total_channels": 25,
+      "eeg_channels": [
+        "Fz",
+        "FC3",
+        "FC1",
+        "FCz",
+        "FC2",
+        "FC4",
+        "C5",
+        "C3",
+        "C1",
+        "Cz",
+        "C2",
+        "C4",
+        "C6",
+        "CP3",
+        "CP1",
+        "CPz",
+        "CP2",
+        "CP4",
+        "P1",
+        "Pz",
+        "P2",
+        "POz"
+      ],
+      "anchor_channels": {
+        "0": "Fz",
+        "7": "C3",
+        "9": "Cz",
+        "11": "C4",
+        "19": "Pz"
+      },
+      "events": {
+        "trial_start": 768,
+        "cue_left": 769,
+        "cue_right": 770,
+        "cue_foot": 771,
+        "cue_tongue": 772,
+        "cue_unknown": 783,
+        "rejected_trial": 1023,
+        "run_start": 32766
+      },
+      "task_classes": {
+        "left": 1,
+        "right": 2
+      },
+      "cue_offset_s": 2.0
+    },
+    "preprocessing": {
+      "bandpass_hz": [
+        4.0,
+        40.0
+      ],
+      "csp_bandpass_hz": [
+        8.0,
+        30.0
+      ],
+      "filter_order": 4,
+      "rereference": "none",
+      "reject_expert_artifacts": true,
+      "reject_peak_to_peak_uv": 200.0,
+      "epoch_tmin_s": 0.5,
+      "epoch_tmax_s": 2.5
+    },
+    "features": {
+      "bands_hz": {
+        "mu": [
+          8.0,
+          12.0
+        ],
+        "beta_low": [
+          13.0,
+          20.0
+        ],
+        "beta_high": [
+          21.0,
+          30.0
+        ]
+      },
+      "welch_nperseg": 250,
+      "welch_overlap": 0.5
+    },
+    "spatial": {
+      "grid_size": 16,
+      "interpolation": "cubic",
+      "montage": "colin27_1020"
+    },
+    "models": {
+      "logreg": {
+        "c_grid": [
+          0.01,
+          0.1,
+          1.0,
+          10.0
+        ]
+      },
+      "csp_lda": {
+        "n_components": 4
+      },
+      "cnn": {
+        "channels": [
+          16,
+          32,
+          64
+        ],
+        "dropout": 0.5,
+        "lr": 0.001,
+        "weight_decay": 0.0001,
+        "batch_size": 32,
+        "max_epochs": 40,
+        "patience": 8,
+        "n_val_subjects": 2
+      }
+    },
+    "evaluation": {
+      "seed": 42,
+      "inner_cv_folds": 5,
+      "outputs_dir": "outputs",
+      "models_dir": "models"
+    }
+  },
+  "software": {
+    "python": "3.11.9",
+    "platform": "Windows-10-10.0.26300-SP0",
+    "numpy": "2.4.6",
+    "scipy": "1.17.1",
+    "pandas": "3.1.0",
+    "mne": "1.13.2",
+    "sklearn": "1.9.1",
+    "torch": "2.14.1+cpu"
+  },
+  "experiment": "ocular_robust_v1",
+  "config_sha256": {
+    "ocular_robust_v1.yaml": "6100dda4b9c006e4acbafae98a4442818c45467314386da308150be3d7d23ddb",
+    "default.yaml": "560b3a70ca2b6d9b4fb6b88bcb0fec058b5055c5beb9e9d3a4b21be6e1588d4c"
+  },
+  "source_sha256": "79b554964ceb039730219be72b0fea60373bf443666ee606bccf64d891f5023e",
+  "code_revision_note": "no git repository; source_sha256 hashes all src/**/*.py",
+  "dataset": "BCI Competition IV Dataset 2a (Graz)",
+  "dataset_manifest_sha256": "70d272f2715002cb81e56b93315c4fdf80759d2b1d8c614e16da31fb2fbe9472",
+  "seed": 42,
+  "baseline_manifest_sha256": "e84f04fa29577660ce1a29cc493fe82d6f4e424e126f03431fd1d7b2988ea19a",
+  "strategy": "baseline",
+  "strategy_definition": {
+    "description": "all 22 EEG channels, no ocular handling (identical to final_v1; re-run in this harness and required to match it exactly)"
+  },
+  "protocol": "loso",
+  "models": [
+    "csp_lda",
+    "logreg"
+  ],
+  "zero_shot_wrt_target_participant": true
+}

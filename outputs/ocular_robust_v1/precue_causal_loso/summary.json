@@ -1,0 +1,308 @@
+{
+  "run_name": "precue_causal_loso",
+  "status": "exploratory",
+  "created_utc": "2026-10-24T13:18:16+00:00",
+  "notes": "pre-cue negative control (causal filter), window cue-1.5..cue-0.5 s",
+  "aggregate": {
+    "loso": {
+      "csp_lda": {
+        "n_splits": 9,
+        "accuracy": {
+          "mean": 0.523568503376993,
+          "std": 0.02854866710000799,
+          "min": 0.4810606060606061,
+          "max": 0.5802919708029197,
+          "n": 9
+        },
+        "balanced_accuracy": {
+          "mean": 0.5208073665257648,
+          "std": 0.030373025113104763,
+          "min": 0.47813235378522645,
+          "max": 0.5795502983802217,
+          "n": 9
+        },
+        "f1": {
+          "mean": 0.43473424181937287,
+          "std": 0.21915109946187256,
+          "min": 0.1045751633986928,
+          "max": 0.6844919786096256,
+          "n": 9
+        },
+        "roc_auc": {
+          "mean": 0.5300954090069783,
+          "std": 0.03841622665161213,
+          "min": 0.47902198243700855,
+          "max": 0.6042199488491049,
+          "n": 9
+        },
+        "precision": {
+          "mean": 0.5338768649536951,
+          "std": 0.06482429555788778,
+          "min": 0.4,
+          "max": 0.6153846153846154,
+          "n": 9
+        },
+        "recall": {
+          "mean": 0.47051986265345014,
+          "std": 0.3427352836980141,
+          "min": 0.05714285714285714,
+          "max": 1.0,
+          "n": 9
+        },
+        "specificity": {
+          "mean": 0.5710948703980796,
+          "std": 0.3375506539189966,
+          "min": 0.0,
+          "max": 0.9637681159420289,
+          "n": 9
+        },
+        "pooled_confusion_matrix": [
+          [
+            688,
+            477
+          ],
+          [
+            640,
+            541
+          ]
+        ]
+      },
+      "logreg": {
+        "n_splits": 9,
+        "accuracy": {
+          "mean": 0.4853680121039907,
+          "std": 0.029446740616360503,
+          "min": 0.44802867383512546,
+          "max": 0.5474452554744526,
+          "n": 9
+        },
+        "balanced_accuracy": {
+          "mean": 0.48372022147154303,
+          "std": 0.03016972868603941,
+          "min": 0.447584789311408,
+          "max": 0.5491261722080136,
+          "n": 9
+        },
+        "f1": {
+          "mean": 0.4527587895465434,
+          "std": 0.1396610795252013,
+          "min": 0.15,
+          "max": 0.5830721003134796,
+          "n": 9
+        },
+        "roc_auc": {
+          "mean": 0.4808310177594603,
+          "std": 0.036208726688112876,
+          "min": 0.4282437745740498,
+          "max": 0.5578644501278772,
+          "n": 9
+        },
+        "precision": {
+          "mean": 0.4843399178413707,
+          "std": 0.053028290115606926,
+          "min": 0.41379310344827586,
+          "max": 0.5945945945945946,
+          "n": 9
+        },
+        "recall": {
+          "mean": 0.4678329211615851,
+          "std": 0.21221374145259117,
+          "min": 0.0916030534351145,
+          "max": 0.7410714285714286,
+          "n": 9
+        },
+        "specificity": {
+          "mean": 0.4996075217815011,
+          "std": 0.22567650262568098,
+          "min": 0.1743119266055046,
+          "max": 0.8721804511278195,
+          "n": 9
+        },
+        "pooled_confusion_matrix": [
+          [
+            595,
+            570
+          ],
+          [
+            637,
+            544
+          ]
+        ]
+      },
+      "paired_comparisons": {
+        "csp_lda_vs_logreg": {
+          "mean_difference_balanced_accuracy": 0.03708714505422171,
+          "wilcoxon_p_two_sided": 0.0078125,
+          "n_pairs": 9
+        }
+      }
+    }
+  },
+  "n_trials_total": 2346,
+  "class_counts": {
+    "0": 1165,
+    "1": 1181
+  },
+  "label_mapping": {
+    "0": "left hand",
+    "1": "right hand"
+  },
+  "config": {
+    "dataset": {
+      "name": "BCI Competition IV Dataset 2a (Graz)",
+      "raw_dir": "data/raw/bci_iv_2a",
+      "labels_dir": "data/raw/labels_2a",
+      "subjects": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "sessions": [
+        "T",
+        "E"
+      ],
+      "expected_sfreq": 250.0,
+      "n_eeg_channels": 22,
+      "n_total_channels": 25,
+      "eeg_channels": [
+        "Fz",
+        "FC3",
+        "FC1",
+        "FCz",
+        "FC2",
+        "FC4",
+        "C5",
+        "C3",
+        "C1",
+        "Cz",
+        "C2",
+        "C4",
+        "C6",
+        "CP3",
+        "CP1",
+        "CPz",
+        "CP2",
+        "CP4",
+        "P1",
+        "Pz",
+        "P2",
+        "POz"
+      ],
+      "anchor_channels": {
+        "0": "Fz",
+        "7": "C3",
+        "9": "Cz",
+        "11": "C4",
+        "19": "Pz"
+      },
+      "events": {
+        "trial_start": 768,
+        "cue_left": 769,
+        "cue_right": 770,
+        "cue_foot": 771,
+        "cue_tongue": 772,
+        "cue_unknown": 783,
+        "rejected_trial": 1023,
+        "run_start": 32766
+      },
+      "task_classes": {
+        "left": 1,
+        "right": 2
+      },
+      "cue_offset_s": 2.0
+    },
+    "preprocessing": {
+      "bandpass_hz": [
+        4.0,
+        40.0
+      ],
+      "csp_bandpass_hz": [
+        8.0,
+        30.0
+      ],
+      "filter_order": 4,
+      "rereference": "none",
+      "reject_expert_artifacts": true,
+      "reject_peak_to_peak_uv": 200.0,
+      "epoch_tmin_s": 0.5,
+      "epoch_tmax_s": 2.5
+    },
+    "features": {
+      "bands_hz": {
+        "mu": [
+          8.0,
+          12.0
+        ],
+        "beta_low": [
+          13.0,
+          20.0
+        ],
+        "beta_high": [
+          21.0,
+          30.0
+        ]
+      },
+      "welch_nperseg": 250,
+      "welch_overlap": 0.5
+    },
+    "spatial": {
+      "grid_size": 16,
+      "interpolation": "cubic",
+      "montage": "colin27_1020"
+    },
+    "models": {
+      "logreg": {
+        "c_grid": [
+          0.01,
+          0.1,
+          1.0,
+          10.0
+        ]
+      },
+      "csp_lda": {
+        "n_components": 4
+      },
+      "cnn": {
+        "channels": [
+          16,
+          32,
+          64
+        ],
+        "dropout": 0.5,
+        "lr": 0.001,
+        "weight_decay": 0.0001,
+        "batch_size": 32,
+        "max_epochs": 40,
+        "patience": 8,
+        "n_val_subjects": 2
+      }
+    },
+    "evaluation": {
+      "seed": 42,
+      "inner_cv_folds": 5,
+      "outputs_dir": "outputs",
+      "models_dir": "models"
+    }
+  },
+  "software": {
+    "python": "3.11.9",
+    "platform": "Windows-10-10.0.26300-SP0",
+    "numpy": "2.4.6",
+    "scipy": "1.17.1",
+    "pandas": "3.1.0",
+    "mne": "1.13.2",
+    "sklearn": "1.9.1",
+    "torch": "2.14.1+cpu"
+  },
+  "window_s": [
+    -1.5,
+    -0.5
+  ],
+  "filter": "causal"
+}

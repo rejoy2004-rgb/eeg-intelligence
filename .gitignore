@@ -1,0 +1,25 @@
+# Environments
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+.ipynb_checkpoints/
+*.egg-info/
+
+# Raw / downloaded data (BCI Competition IV terms: attribution; we do not redistribute)
+data/raw/
+data/cache/
+*.gdf
+*.edf
+*.fif
+
+# Generated artefacts (keep only the .gitkeep placeholders)
+models/*
+!models/.gitkeep
+outputs/*
+!outputs/.gitkeep
+# the single final evaluation is kept as evidence for docs/EXPERIMENTS.md (small CSV/JSON files)
+!outputs/final_v1/
+!outputs/ocular_robust_v1/
+
+.env

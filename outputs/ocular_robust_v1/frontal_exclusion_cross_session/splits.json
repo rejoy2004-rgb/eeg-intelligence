@@ -1,0 +1,506 @@
+[
+  {
+    "protocol": "cross_session",
+    "name": "S01",
+    "train_all": {
+      "subjects": [
+        1
+      ],
+      "sessions": [
+        "T"
+      ],
+      "n_trials": 138,
+      "class_counts": {
+        "0": 69,
+        "1": 69
+      }
+    },
+    "cnn_fit_part": {
+      "subjects": [
+        1
+      ],
+      "sessions": [
+        "T"
+      ],
+      "n_trials": 116,
+      "class_counts": {
+        "0": 58,
+        "1": 58
+      }
+    },
+    "cnn_validation_part": {
+      "subjects": [
+        1
+      ],
+      "sessions": [
+        "T"
+      ],
+      "n_trials": 22,
+      "class_counts": {
+        "0": 11,
+        "1": 11
+      }
+    },
+    "test": {
+      "subjects": [
+        1
+      ],
+      "sessions": [
+        "E"
+      ],
+      "n_trials": 141,
+      "class_counts": {
+        "0": 71,
+        "1": 70
+      }
+    }
+  },
+  {
+    "protocol": "cross_session",
+    "name": "S02",
+    "train_all": {
+      "subjects": [
+        2
+      ],
+      "sessions": [
+        "T"
+      ],
+      "n_trials": 136,
+      "class_counts": {
+        "0": 67,
+        "1": 69
+      }
+    },
+    "cnn_fit_part": {
+      "subjects": [
+        2
+      ],
+      "sessions": [
+        "T"
+      ],
+      "n_trials": 116,
+      "class_counts": {
+        "0": 57,
+        "1": 59
+      }
+    },
+    "cnn_validation_part": {
+      "subjects": [
+        2
+      ],
+      "sessions": [
+        "T"
+      ],
+      "n_trials": 20,
+      "class_counts": {
+        "0": 10,
+        "1": 10
+      }
+    },
+    "test": {
+      "subjects": [
+        2
+      ],
+      "sessions": [
+        "E"
+      ],
+      "n_trials": 142,
+      "class_counts": {
+        "0": 71,
+        "1": 71
+      }
+    }
+  },
+  {
+    "protocol": "cross_session",
+    "name": "S03",
+    "train_all": {
+      "subjects": [
+        3
+      ],
+      "sessions": [
+        "T"
+      ],
+      "n_trials": 137,
+      "class_counts": {
+        "0": 69,
+        "1": 68
+      }
+    },
+    "cnn_fit_part": {
+      "subjects": [
+        3
+      ],
+      "sessions": [
+        "T"
+      ],
+      "n_trials": 113,
+      "class_counts": {
+        "0": 57,
+        "1": 56
+      }
+    },
+    "cnn_validation_part": {
+      "subjects": [
+        3
+      ],
+      "sessions": [
+        "T"
+      ],
+      "n_trials": 24,
+      "class_counts": {
+        "0": 12,
+        "1": 12
+      }
+    },
+    "test": {
+      "subjects": [
+        3
+      ],
+      "sessions": [
+        "E"
+      ],
+      "n_trials": 137,
+      "class_counts": {
+        "0": 67,
+        "1": 70
+      }
+    }
+  },
+  {
+    "protocol": "cross_session",
+    "name": "S04",
+    "train_all": {
+      "subjects": [
+        4
+      ],
+      "sessions": [
+        "T"
+      ],
+      "n_trials": 129,
+      "class_counts": {
+        "0": 62,
+        "1": 67
+      }
+    },
+    "cnn_fit_part": {
+      "subjects": [
+        4
+      ],
+      "sessions": [
+        "T"
+      ],
+      "n_trials": 108,
+      "class_counts": {
+        "0": 51,
+        "1": 57
+      }
+    },
+    "cnn_validation_part": {
+      "subjects": [
+        4
+      ],
+      "sessions": [
+        "T"
+      ],
+      "n_trials": 21,
+      "class_counts": {
+        "0": 11,
+        "1": 10
+      }
+    },
+    "test": {
+      "subjects": [
+        4
+      ],
+      "sessions": [
+        "E"
+      ],
+      "n_trials": 116,
+      "class_counts": {
+        "0": 59,
+        "1": 57
+      }
+    }
+  },
+  {
+    "protocol": "cross_session",
+    "name": "S05",
+    "train_all": {
+      "subjects": [
+        5
+      ],
+      "sessions": [
+        "T"
+      ],
+      "n_trials": 129,
+      "class_counts": {
+        "0": 63,
+        "1": 66
+      }
+    },
+    "cnn_fit_part": {
+      "subjects": [
+        5
+      ],
+      "sessions": [
+        "T"
+      ],
+      "n_trials": 105,
+      "class_counts": {
+        "0": 51,
+        "1": 54
+      }
+    },
+    "cnn_validation_part": {
+      "subjects": [
+        5
+      ],
+      "sessions": [
+        "T"
+      ],
+      "n_trials": 24,
+      "class_counts": {
+        "0": 12,
+        "1": 12
+      }
+    },
+    "test": {
+      "subjects": [
+        5
+      ],
+      "sessions": [
+        "E"
+      ],
+      "n_trials": 135,
+      "class_counts": {
+        "0": 70,
+        "1": 65
+      }
+    }
+  },
+  {
+    "protocol": "cross_session",
+    "name": "S06",
+    "train_all": {
+      "subjects": [
+        6
+      ],
+      "sessions": [
+        "T"
+      ],
+      "n_trials": 113,
+      "class_counts": {
+        "0": 56,
+        "1": 57
+      }
+    },
+    "cnn_fit_part": {
+      "subjects": [
+        6
+      ],
+      "sessions": [
+        "T"
+      ],
+      "n_trials": 98,
+      "class_counts": {
+        "0": 49,
+        "1": 49
+      }
+    },
+    "cnn_validation_part": {
+      "subjects": [
+        6
+      ],
+      "sessions": [
+        "T"
+      ],
+      "n_trials": 15,
+      "class_counts": {
+        "0": 7,
+        "1": 8
+      }
+    },
+    "test": {
+      "subjects": [
+        6
+      ],
+      "sessions": [
+        "E"
+      ],
+      "n_trials": 108,
+      "class_counts": {
+        "0": 53,
+        "1": 55
+      }
+    }
+  },
+  {
+    "protocol": "cross_session",
+    "name": "S07",
+    "train_all": {
+      "subjects": [
+        7
+      ],
+      "sessions": [
+        "T"
+      ],
+      "n_trials": 133,
+      "class_counts": {
+        "0": 67,
+        "1": 66
+      }
+    },
+    "cnn_fit_part": {
+      "subjects": [
+        7
+      ],
+      "sessions": [
+        "T"
+      ],
+      "n_trials": 109,
+      "class_counts": {
+        "0": 55,
+        "1": 54
+      }
+    },
+    "cnn_validation_part": {
+      "subjects": [
+        7
+      ],
+      "sessions": [
+        "T"
+      ],
+      "n_trials": 24,
+      "class_counts": {
+        "0": 12,
+        "1": 12
+      }
+    },
+    "test": {
+      "subjects": [
+        7
+      ],
+      "sessions": [
+        "E"
+      ],
+      "n_trials": 140,
+      "class_counts": {
+        "0": 71,
+        "1": 69
+      }
+    }
+  },
+  {
+    "protocol": "cross_session",
+    "name": "S08",
+    "train_all": {
+      "subjects": [
+        8
+      ],
+      "sessions": [
+        "T"
+      ],
+      "n_trials": 132,
+      "class_counts": {
+        "0": 66,
+        "1": 66
+      }
+    },
+    "cnn_fit_part": {
+      "subjects": [
+        8
+      ],
+      "sessions": [
+        "T"
+      ],
+      "n_trials": 109,
+      "class_counts": {
+        "0": 54,
+        "1": 55
+      }
+    },
+    "cnn_validation_part": {
+      "subjects": [
+        8
+      ],
+      "sessions": [
+        "T"
+      ],
+      "n_trials": 23,
+      "class_counts": {
+        "0": 12,
+        "1": 11
+      }
+    },
+    "test": {
+      "subjects": [
+        8
+      ],
+      "sessions": [
+        "E"
+      ],
+      "n_trials": 134,
+      "class_counts": {
+        "0": 66,
+        "1": 68
+      }
+    }
+  },
+  {
+    "protocol": "cross_session",
+    "name": "S09",
+    "train_all": {
+      "subjects": [
+        9
+      ],
+      "sessions": [
+        "T"
+      ],
+      "n_trials": 116,
+      "class_counts": {
+        "0": 53,
+        "1": 63
+      }
+    },
+    "cnn_fit_part": {
+      "subjects": [
+        9
+      ],
+      "sessions": [
+        "T"
+      ],
+      "n_trials": 96,
+      "class_counts": {
+        "0": 44,
+        "1": 52
+      }
+    },
+    "cnn_validation_part": {
+      "subjects": [
+        9
+      ],
+      "sessions": [
+        "T"
+      ],
+      "n_trials": 20,
+      "class_counts": {
+        "0": 9,
+        "1": 11
+      }
+    },
+    "test": {
+      "subjects": [
+        9
+      ],
+      "sessions": [
+        "E"
+      ],
+      "n_trials": 130,
+      "class_counts": {
+        "0": 65,
+        "1": 65
+      }
+    }
+  }
+]

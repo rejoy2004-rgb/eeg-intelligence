@@ -1,0 +1,13 @@
+{
+ "experiment": "ocular_robust_v1",
+ "config_sha256": {
+  "ocular_robust_v1.yaml": "6100dda4b9c006e4acbafae98a4442818c45467314386da308150be3d7d23ddb",
+  "default.yaml": "560b3a70ca2b6d9b4fb6b88bcb0fec058b5055c5beb9e9d3a4b21be6e1588d4c"
+ },
+ "source_sha256": "79b554964ceb039730219be72b0fea60373bf443666ee606bccf64d891f5023e",
+ "code_revision_note": "no git repository; source_sha256 hashes all src/**/*.py",
+ "dataset": "BCI Competition IV Dataset 2a (Graz)",
+ "dataset_manifest_sha256": "70d272f2715002cb81e56b93315c4fdf80759d2b1d8c614e16da31fb2fbe9472",
+ "seed": 42,
+ "baseline_manifest_sha256": "e84f04fa29577660ce1a29cc493fe82d6f4e424e126f03431fd1d7b2988ea19a"
+}

@@ -1,0 +1,26 @@
+{
+ "lag1_transition_counts_[prev L,R][next L,R]": [
+  [
+   263.0,
+   354.0
+  ],
+  [
+   345.0,
+   263.0
+  ]
+ ],
+ "P(next=same | prev in {L,R}, next in {L,R})": 0.4293877551020408,
+ "chi2_independence_p": 7.762941511399101e-07,
+ "position_agreement_between_sessions_of_same_participant[min,mean,max]": [
+  0.21180555555555555,
+  0.6589506172839505,
+  1.0
+ ],
+ "position_agreement_between_different_participants[min,mean,max]": [
+  0.21180555555555555,
+  0.6344521604938271,
+  1.0
+ ],
+ "chance_agreement": 0.25,
+ "n_recordings": 18
+}

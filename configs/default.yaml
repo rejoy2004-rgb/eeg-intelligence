@@ -1,0 +1,72 @@
+# Central configuration. Every scientific choice is here so it can be recorded with each experiment.
+# Values were fixed BEFORE looking at any held-out test result (see docs/METHODOLOGY.md).
+
+dataset:
+  name: "BCI Competition IV Dataset 2a (Graz)"
+  raw_dir: "data/raw/bci_iv_2a"          # A01T.gdf ... A09E.gdf
+  labels_dir: "data/raw/labels_2a"       # official true labels A01E.mat ... (classlabel, 1..4)
+  subjects: [1, 2, 3, 4, 5, 6, 7, 8, 9]
+  sessions: ["T", "E"]                   # T = training session (labels in file), E = evaluation session
+  expected_sfreq: 250.0
+  n_eeg_channels: 22
+  n_total_channels: 25                   # 22 EEG + 3 EOG (EOG is never used as a feature)
+  # Order of the 22 EEG channels in the GDF files. Only Fz, C3, Cz, C4, Pz carry names in the files
+  # (positions 0, 7, 9, 11, 19) - the loader checks those anchors. The other names come from the
+  # published 10-20 montage (see docs/DATASET.md; marked there as partly unverified from the files).
+  eeg_channels: [Fz, FC3, FC1, FCz, FC2, FC4, C5, C3, C1, Cz, C2, C4, C6, CP3, CP1, CPz, CP2, CP4, P1, Pz, P2, POz]
+  anchor_channels: {0: Fz, 7: C3, 9: Cz, 11: C4, 19: Pz}
+  # Event codes from the official description (Table 2)
+  events:
+    trial_start: 768
+    cue_left: 769
+    cue_right: 770
+    cue_foot: 771
+    cue_tongue: 772
+    cue_unknown: 783
+    rejected_trial: 1023
+    run_start: 32766
+  # Binary task: left hand (class 1) vs right hand (class 2) -> labels 0 / 1
+  task_classes: {left: 1, right: 2}
+  cue_offset_s: 2.0                      # cue appears 2 s after trial start (official paradigm)
+
+preprocessing:
+  bandpass_hz: [4.0, 40.0]               # used for band-power features and the CNN
+  csp_bandpass_hz: [8.0, 30.0]           # used for the CSP+LDA baseline
+  filter_order: 4                        # Butterworth, applied forward+backward (zero phase)
+  rereference: "none"                    # "none" | "average"
+  reject_expert_artifacts: true          # drop trials the data providers marked as 1023
+  reject_peak_to_peak_uv: 200.0          # per-channel peak-to-peak amplitude limit inside the epoch
+  # Epoch window relative to CUE onset (seconds). Cue lasts 1.25 s, imagery until t=6 s (cue + 4 s).
+  epoch_tmin_s: 0.5
+  epoch_tmax_s: 2.5
+
+features:
+  bands_hz: {mu: [8.0, 12.0], beta_low: [13.0, 20.0], beta_high: [21.0, 30.0]}
+  welch_nperseg: 250                     # 1 s segments -> 1 Hz resolution at 250 Hz
+  welch_overlap: 0.5
+
+spatial:
+  grid_size: 16                          # pixels per side (EEGLearn used 32 for 64 electrodes)
+  interpolation: "cubic"                 # scipy griddata (Clough-Tocher), as in EEGLearn
+  montage: "colin27_1020"                 # MNE template positions (NOT measured on participants)
+
+models:
+  logreg:
+    c_grid: [0.01, 0.1, 1.0, 10.0]
+  csp_lda:
+    n_components: 4
+  cnn:
+    channels: [16, 32, 64]
+    dropout: 0.5
+    lr: 0.001
+    weight_decay: 0.0001
+    batch_size: 32
+    max_epochs: 40
+    patience: 8
+    n_val_subjects: 2                    # validation subjects held out of the training set (LOSO)
+
+evaluation:
+  seed: 42
+  inner_cv_folds: 5
+  outputs_dir: "outputs"
+  models_dir: "models"

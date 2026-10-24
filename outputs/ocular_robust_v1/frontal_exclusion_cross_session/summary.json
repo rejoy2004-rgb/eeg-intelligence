@@ -1,0 +1,333 @@
+{
+  "run_name": "frontal_exclusion_cross_session",
+  "status": "exploratory",
+  "created_utc": "2026-10-24T12:55:58+00:00",
+  "notes": "ocular_robust_v1 strategy=frontal_exclusion; design frozen in configs/ocular_robust_v1.yaml",
+  "aggregate": {
+    "cross_session": {
+      "csp_lda": {
+        "n_splits": 9,
+        "accuracy": {
+          "mean": 0.784094882211605,
+          "std": 0.14549258846586566,
+          "min": 0.5774647887323944,
+          "max": 0.948905109489051,
+          "n": 9
+        },
+        "balanced_accuracy": {
+          "mean": 0.7844122819284807,
+          "std": 0.1444304861778215,
+          "min": 0.5774647887323944,
+          "max": 0.9480837789661319,
+          "n": 9
+        },
+        "f1": {
+          "mean": 0.8047263262371699,
+          "std": 0.1144302501980028,
+          "min": 0.6625,
+          "max": 0.9523809523809523,
+          "n": 9
+        },
+        "roc_auc": {
+          "mean": 0.8429164544830042,
+          "std": 0.1567978784515915,
+          "min": 0.5835164835164834,
+          "max": 0.9985074626865671,
+          "n": 9
+        },
+        "precision": {
+          "mean": 0.7793140000121477,
+          "std": 0.16664685201100027,
+          "min": 0.5470085470085471,
+          "max": 0.9692307692307692,
+          "n": 9
+        },
+        "recall": {
+          "mean": 0.8521855523466075,
+          "std": 0.09972598987630991,
+          "min": 0.7285714285714285,
+          "max": 1.0,
+          "n": 9
+        },
+        "specificity": {
+          "mean": 0.7166390115103537,
+          "std": 0.26281822009474254,
+          "min": 0.2535211267605634,
+          "max": 0.971830985915493,
+          "n": 9
+        },
+        "pooled_confusion_matrix": [
+          [
+            425,
+            168
+          ],
+          [
+            86,
+            504
+          ]
+        ]
+      },
+      "logreg": {
+        "n_splits": 9,
+        "accuracy": {
+          "mean": 0.6578352317463854,
+          "std": 0.11736954971161719,
+          "min": 0.5407407407407407,
+          "max": 0.8248175182481752,
+          "n": 9
+        },
+        "balanced_accuracy": {
+          "mean": 0.658074242063349,
+          "std": 0.11720476239239841,
+          "min": 0.5422535211267605,
+          "max": 0.8256929637526652,
+          "n": 9
+        },
+        "f1": {
+          "mean": 0.650390975957273,
+          "std": 0.12701694710138928,
+          "min": 0.5323741007194244,
+          "max": 0.8260869565217391,
+          "n": 9
+        },
+        "roc_auc": {
+          "mean": 0.7076045488667638,
+          "std": 0.148277395470163,
+          "min": 0.5441380678436818,
+          "max": 0.8977272727272727,
+          "n": 9
+        },
+        "precision": {
+          "mean": 0.6572895531093349,
+          "std": 0.11723491523991045,
+          "min": 0.52,
+          "max": 0.859375,
+          "n": 9
+        },
+        "recall": {
+          "mean": 0.6474108479017866,
+          "std": 0.14524866505649212,
+          "min": 0.5,
+          "max": 0.8769230769230769,
+          "n": 9
+        },
+        "specificity": {
+          "mean": 0.6687376362249114,
+          "std": 0.1110892985801234,
+          "min": 0.4857142857142857,
+          "max": 0.8656716417910447,
+          "n": 9
+        },
+        "pooled_confusion_matrix": [
+          [
+            396,
+            197
+          ],
+          [
+            206,
+            384
+          ]
+        ]
+      },
+      "paired_comparisons": {
+        "csp_lda_vs_logreg": {
+          "mean_difference_balanced_accuracy": 0.1263380398651316,
+          "wilcoxon_p_two_sided": 0.00390625,
+          "n_pairs": 9
+        }
+      }
+    }
+  },
+  "n_trials_total": 2346,
+  "class_counts": {
+    "0": 1165,
+    "1": 1181
+  },
+  "label_mapping": {
+    "0": "left hand",
+    "1": "right hand"
+  },
+  "config": {
+    "dataset": {
+      "name": "BCI Competition IV Dataset 2a (Graz)",
+      "raw_dir": "data/raw/bci_iv_2a",
+      "labels_dir": "data/raw/labels_2a",
+      "subjects": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "sessions": [
+        "T",
+        "E"
+      ],
+      "expected_sfreq": 250.0,
+      "n_eeg_channels": 22,
+      "n_total_channels": 25,
+      "eeg_channels": [
+        "Fz",
+        "FC3",
+        "FC1",
+        "FCz",
+        "FC2",
+        "FC4",
+        "C5",
+        "C3",
+        "C1",
+        "Cz",
+        "C2",
+        "C4",
+        "C6",
+        "CP3",
+        "CP1",
+        "CPz",
+        "CP2",
+        "CP4",
+        "P1",
+        "Pz",
+        "P2",
+        "POz"
+      ],
+      "anchor_channels": {
+        "0": "Fz",
+        "7": "C3",
+        "9": "Cz",
+        "11": "C4",
+        "19": "Pz"
+      },
+      "events": {
+        "trial_start": 768,
+        "cue_left": 769,
+        "cue_right": 770,
+        "cue_foot": 771,
+        "cue_tongue": 772,
+        "cue_unknown": 783,
+        "rejected_trial": 1023,
+        "run_start": 32766
+      },
+      "task_classes": {
+        "left": 1,
+        "right": 2
+      },
+      "cue_offset_s": 2.0
+    },
+    "preprocessing": {
+      "bandpass_hz": [
+        4.0,
+        40.0
+      ],
+      "csp_bandpass_hz": [
+        8.0,
+        30.0
+      ],
+      "filter_order": 4,
+      "rereference": "none",
+      "reject_expert_artifacts": true,
+      "reject_peak_to_peak_uv": 200.0,
+      "epoch_tmin_s": 0.5,
+      "epoch_tmax_s": 2.5
+    },
+    "features": {
+      "bands_hz": {
+        "mu": [
+          8.0,
+          12.0
+        ],
+        "beta_low": [
+          13.0,
+          20.0
+        ],
+        "beta_high": [
+          21.0,
+          30.0
+        ]
+      },
+      "welch_nperseg": 250,
+      "welch_overlap": 0.5
+    },
+    "spatial": {
+      "grid_size": 16,
+      "interpolation": "cubic",
+      "montage": "colin27_1020"
+    },
+    "models": {
+      "logreg": {
+        "c_grid": [
+          0.01,
+          0.1,
+          1.0,
+          10.0
+        ]
+      },
+      "csp_lda": {
+        "n_components": 4
+      },
+      "cnn": {
+        "channels": [
+          16,
+          32,
+          64
+        ],
+        "dropout": 0.5,
+        "lr": 0.001,
+        "weight_decay": 0.0001,
+        "batch_size": 32,
+        "max_epochs": 40,
+        "patience": 8,
+        "n_val_subjects": 2
+      }
+    },
+    "evaluation": {
+      "seed": 42,
+      "inner_cv_folds": 5,
+      "outputs_dir": "outputs",
+      "models_dir": "models"
+    }
+  },
+  "software": {
+    "python": "3.11.9",
+    "platform": "Windows-10-10.0.26300-SP0",
+    "numpy": "2.4.6",
+    "scipy": "1.17.1",
+    "pandas": "3.1.0",
+    "mne": "1.13.2",
+    "sklearn": "1.9.1",
+    "torch": "2.14.1+cpu"
+  },
+  "experiment": "ocular_robust_v1",
+  "config_sha256": {
+    "ocular_robust_v1.yaml": "6100dda4b9c006e4acbafae98a4442818c45467314386da308150be3d7d23ddb",
+    "default.yaml": "560b3a70ca2b6d9b4fb6b88bcb0fec058b5055c5beb9e9d3a4b21be6e1588d4c"
+  },
+  "source_sha256": "79b554964ceb039730219be72b0fea60373bf443666ee606bccf64d891f5023e",
+  "code_revision_note": "no git repository; source_sha256 hashes all src/**/*.py",
+  "dataset": "BCI Competition IV Dataset 2a (Graz)",
+  "dataset_manifest_sha256": "70d272f2715002cb81e56b93315c4fdf80759d2b1d8c614e16da31fb2fbe9472",
+  "seed": 42,
+  "baseline_manifest_sha256": "e84f04fa29577660ce1a29cc493fe82d6f4e424e126f03431fd1d7b2988ea19a",
+  "strategy": "frontal_exclusion",
+  "strategy_definition": {
+    "description": "drop the channels closest to the eyes before any feature/CSP step",
+    "channels_excluded": [
+      "Fz",
+      "FC3",
+      "FC1",
+      "FCz",
+      "FC2",
+      "FC4"
+    ],
+    "rationale": "ocular activity is largest frontally and falls off with distance; the six channels are the two most anterior rows of the montage (Fig. 3 rows 1-2)"
+  },
+  "protocol": "cross_session",
+  "models": [
+    "csp_lda",
+    "logreg"
+  ],
+  "zero_shot_wrt_target_participant": true
+}

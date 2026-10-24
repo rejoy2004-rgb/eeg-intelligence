@@ -1,0 +1,659 @@
+[
+  {
+    "protocol": "loso",
+    "name": "heldout_S01",
+    "train_all": {
+      "subjects": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "sessions": [
+        "E",
+        "T"
+      ],
+      "n_trials": 2067,
+      "class_counts": {
+        "0": 1025,
+        "1": 1042
+      }
+    },
+    "cnn_fit_part": {
+      "subjects": [
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "sessions": [
+        "E",
+        "T"
+      ],
+      "n_trials": 1515,
+      "class_counts": {
+        "0": 751,
+        "1": 764
+      }
+    },
+    "cnn_validation_part": {
+      "subjects": [
+        2,
+        3
+      ],
+      "sessions": [
+        "E",
+        "T"
+      ],
+      "n_trials": 552,
+      "class_counts": {
+        "0": 274,
+        "1": 278
+      }
+    },
+    "test": {
+      "subjects": [
+        1
+      ],
+      "sessions": [
+        "E",
+        "T"
+      ],
+      "n_trials": 279,
+      "class_counts": {
+        "0": 140,
+        "1": 139
+      }
+    }
+  },
+  {
+    "protocol": "loso",
+    "name": "heldout_S02",
+    "train_all": {
+      "subjects": [
+        1,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "sessions": [
+        "E",
+        "T"
+      ],
+      "n_trials": 2068,
+      "class_counts": {
+        "0": 1027,
+        "1": 1041
+      }
+    },
+    "cnn_fit_part": {
+      "subjects": [
+        1,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "sessions": [
+        "E",
+        "T"
+      ],
+      "n_trials": 1549,
+      "class_counts": {
+        "0": 770,
+        "1": 779
+      }
+    },
+    "cnn_validation_part": {
+      "subjects": [
+        3,
+        4
+      ],
+      "sessions": [
+        "E",
+        "T"
+      ],
+      "n_trials": 519,
+      "class_counts": {
+        "0": 257,
+        "1": 262
+      }
+    },
+    "test": {
+      "subjects": [
+        2
+      ],
+      "sessions": [
+        "E",
+        "T"
+      ],
+      "n_trials": 278,
+      "class_counts": {
+        "0": 138,
+        "1": 140
+      }
+    }
+  },
+  {
+    "protocol": "loso",
+    "name": "heldout_S03",
+    "train_all": {
+      "subjects": [
+        1,
+        2,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "sessions": [
+        "E",
+        "T"
+      ],
+      "n_trials": 2072,
+      "class_counts": {
+        "0": 1029,
+        "1": 1043
+      }
+    },
+    "cnn_fit_part": {
+      "subjects": [
+        1,
+        2,
+        6,
+        7,
+        8,
+        9
+      ],
+      "sessions": [
+        "E",
+        "T"
+      ],
+      "n_trials": 1563,
+      "class_counts": {
+        "0": 775,
+        "1": 788
+      }
+    },
+    "cnn_validation_part": {
+      "subjects": [
+        4,
+        5
+      ],
+      "sessions": [
+        "E",
+        "T"
+      ],
+      "n_trials": 509,
+      "class_counts": {
+        "0": 254,
+        "1": 255
+      }
+    },
+    "test": {
+      "subjects": [
+        3
+      ],
+      "sessions": [
+        "E",
+        "T"
+      ],
+      "n_trials": 274,
+      "class_counts": {
+        "0": 136,
+        "1": 138
+      }
+    }
+  },
+  {
+    "protocol": "loso",
+    "name": "heldout_S04",
+    "train_all": {
+      "subjects": [
+        1,
+        2,
+        3,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "sessions": [
+        "E",
+        "T"
+      ],
+      "n_trials": 2101,
+      "class_counts": {
+        "0": 1044,
+        "1": 1057
+      }
+    },
+    "cnn_fit_part": {
+      "subjects": [
+        1,
+        2,
+        3,
+        7,
+        8,
+        9
+      ],
+      "sessions": [
+        "E",
+        "T"
+      ],
+      "n_trials": 1616,
+      "class_counts": {
+        "0": 802,
+        "1": 814
+      }
+    },
+    "cnn_validation_part": {
+      "subjects": [
+        5,
+        6
+      ],
+      "sessions": [
+        "E",
+        "T"
+      ],
+      "n_trials": 485,
+      "class_counts": {
+        "0": 242,
+        "1": 243
+      }
+    },
+    "test": {
+      "subjects": [
+        4
+      ],
+      "sessions": [
+        "E",
+        "T"
+      ],
+      "n_trials": 245,
+      "class_counts": {
+        "0": 121,
+        "1": 124
+      }
+    }
+  },
+  {
+    "protocol": "loso",
+    "name": "heldout_S05",
+    "train_all": {
+      "subjects": [
+        1,
+        2,
+        3,
+        4,
+        6,
+        7,
+        8,
+        9
+      ],
+      "sessions": [
+        "E",
+        "T"
+      ],
+      "n_trials": 2082,
+      "class_counts": {
+        "0": 1032,
+        "1": 1050
+      }
+    },
+    "cnn_fit_part": {
+      "subjects": [
+        1,
+        2,
+        3,
+        4,
+        8,
+        9
+      ],
+      "sessions": [
+        "E",
+        "T"
+      ],
+      "n_trials": 1588,
+      "class_counts": {
+        "0": 785,
+        "1": 803
+      }
+    },
+    "cnn_validation_part": {
+      "subjects": [
+        6,
+        7
+      ],
+      "sessions": [
+        "E",
+        "T"
+      ],
+      "n_trials": 494,
+      "class_counts": {
+        "0": 247,
+        "1": 247
+      }
+    },
+    "test": {
+      "subjects": [
+        5
+      ],
+      "sessions": [
+        "E",
+        "T"
+      ],
+      "n_trials": 264,
+      "class_counts": {
+        "0": 133,
+        "1": 131
+      }
+    }
+  },
+  {
+    "protocol": "loso",
+    "name": "heldout_S06",
+    "train_all": {
+      "subjects": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        7,
+        8,
+        9
+      ],
+      "sessions": [
+        "E",
+        "T"
+      ],
+      "n_trials": 2125,
+      "class_counts": {
+        "0": 1056,
+        "1": 1069
+      }
+    },
+    "cnn_fit_part": {
+      "subjects": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        9
+      ],
+      "sessions": [
+        "E",
+        "T"
+      ],
+      "n_trials": 1586,
+      "class_counts": {
+        "0": 786,
+        "1": 800
+      }
+    },
+    "cnn_validation_part": {
+      "subjects": [
+        7,
+        8
+      ],
+      "sessions": [
+        "E",
+        "T"
+      ],
+      "n_trials": 539,
+      "class_counts": {
+        "0": 270,
+        "1": 269
+      }
+    },
+    "test": {
+      "subjects": [
+        6
+      ],
+      "sessions": [
+        "E",
+        "T"
+      ],
+      "n_trials": 221,
+      "class_counts": {
+        "0": 109,
+        "1": 112
+      }
+    }
+  },
+  {
+    "protocol": "loso",
+    "name": "heldout_S07",
+    "train_all": {
+      "subjects": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        8,
+        9
+      ],
+      "sessions": [
+        "E",
+        "T"
+      ],
+      "n_trials": 2073,
+      "class_counts": {
+        "0": 1027,
+        "1": 1046
+      }
+    },
+    "cnn_fit_part": {
+      "subjects": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "sessions": [
+        "E",
+        "T"
+      ],
+      "n_trials": 1561,
+      "class_counts": {
+        "0": 777,
+        "1": 784
+      }
+    },
+    "cnn_validation_part": {
+      "subjects": [
+        8,
+        9
+      ],
+      "sessions": [
+        "E",
+        "T"
+      ],
+      "n_trials": 512,
+      "class_counts": {
+        "0": 250,
+        "1": 262
+      }
+    },
+    "test": {
+      "subjects": [
+        7
+      ],
+      "sessions": [
+        "E",
+        "T"
+      ],
+      "n_trials": 273,
+      "class_counts": {
+        "0": 138,
+        "1": 135
+      }
+    }
+  },
+  {
+    "protocol": "loso",
+    "name": "heldout_S08",
+    "train_all": {
+      "subjects": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        9
+      ],
+      "sessions": [
+        "E",
+        "T"
+      ],
+      "n_trials": 2080,
+      "class_counts": {
+        "0": 1033,
+        "1": 1047
+      }
+    },
+    "cnn_fit_part": {
+      "subjects": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "sessions": [
+        "E",
+        "T"
+      ],
+      "n_trials": 1555,
+      "class_counts": {
+        "0": 775,
+        "1": 780
+      }
+    },
+    "cnn_validation_part": {
+      "subjects": [
+        1,
+        9
+      ],
+      "sessions": [
+        "E",
+        "T"
+      ],
+      "n_trials": 525,
+      "class_counts": {
+        "0": 258,
+        "1": 267
+      }
+    },
+    "test": {
+      "subjects": [
+        8
+      ],
+      "sessions": [
+        "E",
+        "T"
+      ],
+      "n_trials": 266,
+      "class_counts": {
+        "0": 132,
+        "1": 134
+      }
+    }
+  },
+  {
+    "protocol": "loso",
+    "name": "heldout_S09",
+    "train_all": {
+      "subjects": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "sessions": [
+        "E",
+        "T"
+      ],
+      "n_trials": 2100,
+      "class_counts": {
+        "0": 1047,
+        "1": 1053
+      }
+    },
+    "cnn_fit_part": {
+      "subjects": [
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "sessions": [
+        "E",
+        "T"
+      ],
+      "n_trials": 1543,
+      "class_counts": {
+        "0": 769,
+        "1": 774
+      }
+    },
+    "cnn_validation_part": {
+      "subjects": [
+        1,
+        2
+      ],
+      "sessions": [
+        "E",
+        "T"
+      ],
+      "n_trials": 557,
+      "class_counts": {
+        "0": 278,
+        "1": 279
+      }
+    },
+    "test": {
+      "subjects": [
+        9
+      ],
+      "sessions": [
+        "E",
+        "T"
+      ],
+      "n_trials": 246,
+      "class_counts": {
+        "0": 118,
+        "1": 128
+      }
+    }
+  }
+]

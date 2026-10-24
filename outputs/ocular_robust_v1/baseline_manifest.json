@@ -1,0 +1,23 @@
+{
+ "final_v1": {
+  "predictions.csv": "a55fa6d271a9e03df581f000c240d073923467c1d0a1af9ec2e2df809fee954d",
+  "rejected_trials.csv": "86fdb7d1e84e356f1a6eb7dbc62811160796c8d6f20c2f15184241afe0a990db",
+  "results_per_split.csv": "58f304c03cfcf78b1b3a59dfd61093935f7b0077db7ca2463266f1f40dd0ef27",
+  "splits.json": "091a80b93f905f9c9ea4faacacbc96de4e7175c099e6d436eeb5a720417b577a",
+  "summary.json": "b8253866d719f6bb838f4c3904027d60d68c323cc385a20b3441063d93719d98"
+ },
+ "repro_v1": {
+  "predictions.csv": "a55fa6d271a9e03df581f000c240d073923467c1d0a1af9ec2e2df809fee954d",
+  "rejected_trials.csv": "86fdb7d1e84e356f1a6eb7dbc62811160796c8d6f20c2f15184241afe0a990db",
+  "results_per_split.csv": "58f304c03cfcf78b1b3a59dfd61093935f7b0077db7ca2463266f1f40dd0ef27",
+  "splits.json": "091a80b93f905f9c9ea4faacacbc96de4e7175c099e6d436eeb5a720417b577a",
+  "summary.json": "d87de1c4b2e8a1ab6b4e5fd8b3297eb319fc630361446ce57fbf8c202a19ef35"
+ },
+ "repro_v2": {
+  "predictions.csv": "a55fa6d271a9e03df581f000c240d073923467c1d0a1af9ec2e2df809fee954d",
+  "rejected_trials.csv": "86fdb7d1e84e356f1a6eb7dbc62811160796c8d6f20c2f15184241afe0a990db",
+  "results_per_split.csv": "e3c425534a1654da75c9a3c8bfe6fd3577504e5749c13b334aedafab244cdae2",
+  "splits.json": "091a80b93f905f9c9ea4faacacbc96de4e7175c099e6d436eeb5a720417b577a",
+  "summary.json": "14176ef5095399875898a20bb7ca339af7d11e94df8c44a4046a021f6bb1108b"
+ }
+}

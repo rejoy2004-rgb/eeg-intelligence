@@ -1,0 +1,64 @@
+# Pre-specified design of the ocular-robust evaluation (outputs/ocular_robust_v1/).
+# Frozen BEFORE any outer-test result of the strategies below was computed; its SHA-256 is stored in every output
+# folder (config_sha256). Nothing in this file may be changed after looking at results - create ocular_robust_v2.yaml instead.
+#
+# Disclosure of what was already seen before this file was written (research audit, outputs/audit_v1/ocular_confound.csv):
+#   * descriptive test-set scores of CSP+LDA without the six frontal channels (A 0.784, B 0.646 vs baseline 0.783 / 0.632)
+#   * descriptive EOG-only decoding scores per participant
+# The frontal channel set below is the one written into scripts/investigate_ocular_confound.py before those numbers existed;
+# no other channel set is evaluated. The EOG-regression strategy and the pre-cue investigation have not been run before.
+
+experiment: ocular_robust_v1
+base_config: configs/default.yaml        # preprocessing, epoch window, bands, CSP/LDA/logreg settings are NOT changed
+seed: 42
+protocols: [cross_session, loso]          # identical outer splits to final_v1 (src/evaluation/splits.py)
+models: [csp_lda, logreg]                 # CNN deliberately not part of this evaluation (no claim about it is made here)
+
+strategies:
+  baseline:
+    description: all 22 EEG channels, no ocular handling (identical to final_v1; re-run in this harness and required to match it exactly)
+  frontal_exclusion:
+    description: drop the channels closest to the eyes before any feature/CSP step
+    channels_excluded: [Fz, FC3, FC1, FCz, FC2, FC4]
+    rationale: ocular activity is largest frontally and falls off with distance; the six channels are the two most anterior rows of the montage (Fig. 3 rows 1-2)
+  eog_regression_train_only:
+    description: >-
+      EOG regression (Schlogl et al. 2007 style, ordinary least squares, 3 EOG regressors -> each EEG channel) fitted on the dataset's own
+      eye-movement calibration block (event 1072, recorded before the trials, no labels, no task trials). No target-participant data are used:
+      protocol A -> coefficients from the participant's training-session (T) calibration block, applied to both sessions;
+      protocol B -> coefficients averaged over the calibration blocks of the 8 TRAINING participants, applied to the held-out participant.
+    zero_shot_with_respect_to_target_participant: true   # in protocol B; in protocol A the target is the same person (their own T block)
+  eog_regression_target_calibrated:
+    description: >-
+      same regression but fitted on the target recording's OWN eye-movement calibration block (unlabeled, separate from every evaluation trial).
+      This uses calibration data of the target participant/session -> NOT zero-shot; reported separately and labelled as such.
+    zero_shot_with_respect_to_target_participant: false
+
+eog_regression:
+  channels_eog: [EOG-left, EOG-central, EOG-right]
+  calibration_event_code: 1072            # "eye movements" block (official event table)
+  fit_after_band_pass: true               # EEG and EOG are band-passed identically (per gap-free segment) before fitting and correcting
+  intercept: false                        # band-passed signals are zero-mean
+  regulariser: none                       # plain OLS; no hyper-parameter to tune
+  known_limitation: EOG channels also pick up brain activity (bidirectional leakage) -> regression can over-correct and remove neural signal
+
+eog_only_diagnostic:
+  features: [mean_shift_vs_pre_cue_baseline, log_variance]   # per EOG channel, 6 features, raw EOG (0.5-100 Hz hardware filter)
+  window_s: [0.5, 2.5]                   # relative to cue, same as the EEG epochs
+  baseline_s: [-0.5, 0.0]
+  classifier: standardised logistic regression, C = 1.0 (fixed, no selection)
+  purpose: asks only "does the EOG carry class information?"; it cannot show what the EEG classifier uses
+
+statistics:
+  unit_of_analysis: participant (n = 9); trials are never pooled as independent samples
+  paired_test: exact Wilcoxon signed-rank (two-sided) on per-participant balanced accuracy differences
+  effect_size: mean paired difference with participant-level percentile bootstrap 95 % CI (10000 resamples, seed 0)
+  primary_family: {model: csp_lda, comparisons: [frontal_exclusion vs baseline, eog_regression_train_only vs baseline], protocols: [A, B]}   # 4 tests, Holm
+  secondary_family: {model: csp_lda, comparisons: [eog_regression_target_calibrated vs baseline], protocols: [A, B]}                          # 2 tests, Holm, exploratory
+  tertiary_family: {model: logreg, comparisons: [all strategies vs baseline], protocols: [A, B]}                                              # 6 tests, Holm, exploratory
+  eog_only_vs_chance: one-sample exact Wilcoxon of participant balanced accuracy against 0.5, Holm over the 2 protocols
+
+precue_investigation:
+  window_s: [-1.5, -0.5]                  # relative to cue; the audit's control
+  checks: [timing_and_boundaries, trial_order_and_label_sequence_structure, filter_leakage_via_causal_filtering, within_run_permutation_test, one_sample_test_across_participants]
+  causal_filter: forward-only Butterworth (sosfilt), same band edges and order as the primary filter

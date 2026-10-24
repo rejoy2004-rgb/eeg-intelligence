@@ -1,0 +1,175 @@
+{
+ "n_distinct_sequences": 4,
+ "recordings_per_sequence": [
+  [
+   "S01E",
+   "S02E",
+   "S02T",
+   "S03E",
+   "S03T",
+   "S05E",
+   "S05T",
+   "S06E",
+   "S07E",
+   "S07T",
+   "S08E",
+   "S08T",
+   "S09E"
+  ],
+  [
+   "S01T",
+   "S04E"
+  ],
+  [
+   "S04T"
+  ],
+  [
+   "S06T",
+   "S09T"
+  ]
+ ],
+ "A_agreement_T_vs_E": {
+  "1": 0.21180555555555555,
+  "2": 1.0,
+  "3": 1.0,
+  "4": 0.2465277777777778,
+  "5": 1.0,
+  "6": 0.2361111111111111,
+  "7": 1.0,
+  "8": 1.0,
+  "9": 0.2361111111111111
+ },
+ "B_mean_agreement_with_training_recordings": {
+  "1": 0.5423177083333334,
+  "2": 0.7599826388888888,
+  "3": 0.7599826388888888,
+  "4": 0.2667100694444444,
+  "5": 0.7599826388888888,
+  "6": 0.5505642361111112,
+  "7": 0.7599826388888888,
+  "8": 0.7599826388888888,
+  "9": 0.5505642361111112
+ },
+ "comparisons": [
+  {
+   "analysis": "pre-cue CSP+LDA, protocol A, zero_phase",
+   "identical_order_participants": [
+    2,
+    3,
+    5,
+    7,
+    8
+   ],
+   "mean_identical": 0.5376283364409116,
+   "different_order_participants": [
+    1,
+    4,
+    6,
+    9
+   ],
+   "mean_different": 0.536710627453738
+  },
+  {
+   "analysis": "pre-cue CSP+LDA, protocol B, zero_phase: Spearman(agreement with training recordings, BA)",
+   "rho": 0.5229577884350213,
+   "p_uncorrected": 0.14855887564628667,
+   "n": 9
+  },
+  {
+   "analysis": "pre-cue CSP+LDA, protocol A, causal",
+   "identical_order_participants": [
+    2,
+    3,
+    5,
+    7,
+    8
+   ],
+   "mean_identical": 0.5545505264481042,
+   "different_order_participants": [
+    1,
+    4,
+    6,
+    9
+   ],
+   "mean_different": 0.5260213485561034
+  },
+  {
+   "analysis": "pre-cue CSP+LDA, protocol B, causal: Spearman(agreement with training recordings, BA)",
+   "rho": 0.1926686588971131,
+   "p_uncorrected": 0.6194384800734203,
+   "n": 9
+  },
+  {
+   "analysis": "MAIN task-window result csp_lda, protocol A (final_v1)",
+   "identical_order_participants": [
+    2,
+    3,
+    5,
+    7,
+    8
+   ],
+   "mean_identical": 0.7822826598684038,
+   "different_order_participants": [
+    1,
+    4,
+    6,
+    9
+   ],
+   "mean_different": 0.7827959386822796
+  },
+  {
+   "analysis": "MAIN task-window result csp_lda, protocol B: Spearman(agreement with training recordings, BA)",
+   "rho": 0.05504818825631803,
+   "p_uncorrected": 0.8881395557456135,
+   "n": 9
+  },
+  {
+   "analysis": "MAIN task-window result logreg, protocol A (final_v1)",
+   "identical_order_participants": [
+    2,
+    3,
+    5,
+    7,
+    8
+   ],
+   "mean_identical": 0.6557387543353117,
+   "different_order_participants": [
+    1,
+    4,
+    6,
+    9
+   ],
+   "mean_different": 0.6325163638063072
+  },
+  {
+   "analysis": "MAIN task-window result logreg, protocol B: Spearman(agreement with training recordings, BA)",
+   "rho": -0.31193973345246884,
+   "p_uncorrected": 0.4138216866477026,
+   "n": 9
+  },
+  {
+   "analysis": "MAIN task-window result cnn, protocol A (final_v1)",
+   "identical_order_participants": [
+    2,
+    3,
+    5,
+    7,
+    8
+   ],
+   "mean_identical": 0.6088476041389825,
+   "different_order_participants": [
+    1,
+    4,
+    6,
+    9
+   ],
+   "mean_different": 0.6033308951349723
+  },
+  {
+   "analysis": "MAIN task-window result cnn, protocol B: Spearman(agreement with training recordings, BA)",
+   "rho": -0.4403855060505442,
+   "p_uncorrected": 0.23549129017159384,
+   "n": 9
+  }
+ ]
+}

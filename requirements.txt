@@ -1,0 +1,13 @@
+# Runtime dependencies. Install PyTorch CPU build first (see README):
+#   pip install torch --index-url https://download.pytorch.org/whl/cpu
+numpy>=1.26
+scipy>=1.11
+pandas>=2.1
+mne>=1.6
+scikit-learn>=1.4
+matplotlib>=3.8
+plotly>=5.18
+streamlit>=1.30
+pyyaml>=6.0
+torch>=2.2
+pytest>=8.0

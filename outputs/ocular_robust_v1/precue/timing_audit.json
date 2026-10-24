@@ -1,0 +1,496 @@
+{
+ "aggregate": {
+  "window_start_after_trial_start_s[min,median,max]": [
+   0.5,
+   0.5,
+   0.5
+  ],
+  "window_end_before_cue_s[min,median,max]": [
+   0.5,
+   0.5,
+   0.5
+  ],
+  "window_start_after_previous_imagery_end_s[min,median,max]": [
+   2.08,
+   2.528,
+   2.98
+  ],
+  "windows_overlapping_missing_gap_total": 0,
+  "windows_crossing_trial_start_or_cue_total": 0,
+  "trial_start_spacing_s[min,median,max]": [
+   7.58,
+   8.032,
+   9.312
+  ]
+ },
+ "per_recording": [
+  {
+   "recording": "S01T",
+   "n_trials": 138,
+   "window_start_after_trial_start_s[min,median,max]": [
+    0.5,
+    0.5,
+    0.5
+   ],
+   "window_end_before_cue_s[min,median,max]": [
+    0.5,
+    0.5,
+    0.5
+   ],
+   "window_start_after_previous_imagery_end_s[min,median,max]": [
+    2.08,
+    2.524,
+    2.98
+   ],
+   "windows_overlapping_missing_gap": 0,
+   "windows_crossing_trial_start_or_cue": 0,
+   "trial_start_spacing_s[min,median,max]": [
+    7.58,
+    8.032,
+    9.312
+   ]
+  },
+  {
+   "recording": "S01E",
+   "n_trials": 141,
+   "window_start_after_trial_start_s[min,median,max]": [
+    0.5,
+    0.5,
+    0.5
+   ],
+   "window_end_before_cue_s[min,median,max]": [
+    0.5,
+    0.5,
+    0.5
+   ],
+   "window_start_after_previous_imagery_end_s[min,median,max]": [
+    2.08,
+    2.516,
+    2.98
+   ],
+   "windows_overlapping_missing_gap": 0,
+   "windows_crossing_trial_start_or_cue": 0,
+   "trial_start_spacing_s[min,median,max]": [
+    7.58,
+    8.032,
+    9.312
+   ]
+  },
+  {
+   "recording": "S02T",
+   "n_trials": 136,
+   "window_start_after_trial_start_s[min,median,max]": [
+    0.5,
+    0.5,
+    0.5
+   ],
+   "window_end_before_cue_s[min,median,max]": [
+    0.5,
+    0.5,
+    0.5
+   ],
+   "window_start_after_previous_imagery_end_s[min,median,max]": [
+    2.08,
+    2.532,
+    2.98
+   ],
+   "windows_overlapping_missing_gap": 0,
+   "windows_crossing_trial_start_or_cue": 0,
+   "trial_start_spacing_s[min,median,max]": [
+    7.58,
+    8.032,
+    9.312
+   ]
+  },
+  {
+   "recording": "S02E",
+   "n_trials": 142,
+   "window_start_after_trial_start_s[min,median,max]": [
+    0.5,
+    0.5,
+    0.5
+   ],
+   "window_end_before_cue_s[min,median,max]": [
+    0.5,
+    0.5,
+    0.5
+   ],
+   "window_start_after_previous_imagery_end_s[min,median,max]": [
+    2.08,
+    2.516,
+    2.98
+   ],
+   "windows_overlapping_missing_gap": 0,
+   "windows_crossing_trial_start_or_cue": 0,
+   "trial_start_spacing_s[min,median,max]": [
+    7.58,
+    8.032,
+    9.312
+   ]
+  },
+  {
+   "recording": "S03T",
+   "n_trials": 137,
+   "window_start_after_trial_start_s[min,median,max]": [
+    0.5,
+    0.5,
+    0.5
+   ],
+   "window_end_before_cue_s[min,median,max]": [
+    0.5,
+    0.5,
+    0.5
+   ],
+   "window_start_after_previous_imagery_end_s[min,median,max]": [
+    2.08,
+    2.516,
+    2.98
+   ],
+   "windows_overlapping_missing_gap": 0,
+   "windows_crossing_trial_start_or_cue": 0,
+   "trial_start_spacing_s[min,median,max]": [
+    7.58,
+    8.032,
+    9.312
+   ]
+  },
+  {
+   "recording": "S03E",
+   "n_trials": 137,
+   "window_start_after_trial_start_s[min,median,max]": [
+    0.5,
+    0.5,
+    0.5
+   ],
+   "window_end_before_cue_s[min,median,max]": [
+    0.5,
+    0.5,
+    0.5
+   ],
+   "window_start_after_previous_imagery_end_s[min,median,max]": [
+    2.08,
+    2.532,
+    2.98
+   ],
+   "windows_overlapping_missing_gap": 0,
+   "windows_crossing_trial_start_or_cue": 0,
+   "trial_start_spacing_s[min,median,max]": [
+    7.58,
+    8.032,
+    9.312
+   ]
+  },
+  {
+   "recording": "S04T",
+   "n_trials": 129,
+   "window_start_after_trial_start_s[min,median,max]": [
+    0.5,
+    0.5,
+    0.5
+   ],
+   "window_end_before_cue_s[min,median,max]": [
+    0.5,
+    0.5,
+    0.5
+   ],
+   "window_start_after_previous_imagery_end_s[min,median,max]": [
+    2.08,
+    2.532,
+    2.98
+   ],
+   "windows_overlapping_missing_gap": 0,
+   "windows_crossing_trial_start_or_cue": 0,
+   "trial_start_spacing_s[min,median,max]": [
+    7.58,
+    8.032,
+    9.312
+   ]
+  },
+  {
+   "recording": "S04E",
+   "n_trials": 116,
+   "window_start_after_trial_start_s[min,median,max]": [
+    0.5,
+    0.5,
+    0.5
+   ],
+   "window_end_before_cue_s[min,median,max]": [
+    0.5,
+    0.5,
+    0.5
+   ],
+   "window_start_after_previous_imagery_end_s[min,median,max]": [
+    2.08,
+    2.532,
+    2.98
+   ],
+   "windows_overlapping_missing_gap": 0,
+   "windows_crossing_trial_start_or_cue": 0,
+   "trial_start_spacing_s[min,median,max]": [
+    7.58,
+    8.032,
+    9.312
+   ]
+  },
+  {
+   "recording": "S05T",
+   "n_trials": 129,
+   "window_start_after_trial_start_s[min,median,max]": [
+    0.5,
+    0.5,
+    0.5
+   ],
+   "window_end_before_cue_s[min,median,max]": [
+    0.5,
+    0.5,
+    0.5
+   ],
+   "window_start_after_previous_imagery_end_s[min,median,max]": [
+    2.08,
+    2.524,
+    2.98
+   ],
+   "windows_overlapping_missing_gap": 0,
+   "windows_crossing_trial_start_or_cue": 0,
+   "trial_start_spacing_s[min,median,max]": [
+    7.58,
+    8.032,
+    9.312
+   ]
+  },
+  {
+   "recording": "S05E",
+   "n_trials": 135,
+   "window_start_after_trial_start_s[min,median,max]": [
+    0.5,
+    0.5,
+    0.5
+   ],
+   "window_end_before_cue_s[min,median,max]": [
+    0.5,
+    0.5,
+    0.5
+   ],
+   "window_start_after_previous_imagery_end_s[min,median,max]": [
+    2.08,
+    2.532,
+    2.98
+   ],
+   "windows_overlapping_missing_gap": 0,
+   "windows_crossing_trial_start_or_cue": 0,
+   "trial_start_spacing_s[min,median,max]": [
+    7.58,
+    8.032,
+    9.312
+   ]
+  },
+  {
+   "recording": "S06T",
+   "n_trials": 113,
+   "window_start_after_trial_start_s[min,median,max]": [
+    0.5,
+    0.5,
+    0.5
+   ],
+   "window_end_before_cue_s[min,median,max]": [
+    0.5,
+    0.5,
+    0.5
+   ],
+   "window_start_after_previous_imagery_end_s[min,median,max]": [
+    2.08,
+    2.512,
+    2.98
+   ],
+   "windows_overlapping_missing_gap": 0,
+   "windows_crossing_trial_start_or_cue": 0,
+   "trial_start_spacing_s[min,median,max]": [
+    7.58,
+    8.032,
+    9.312
+   ]
+  },
+  {
+   "recording": "S06E",
+   "n_trials": 108,
+   "window_start_after_trial_start_s[min,median,max]": [
+    0.5,
+    0.5,
+    0.5
+   ],
+   "window_end_before_cue_s[min,median,max]": [
+    0.5,
+    0.5,
+    0.5
+   ],
+   "window_start_after_previous_imagery_end_s[min,median,max]": [
+    2.08,
+    2.532,
+    2.98
+   ],
+   "windows_overlapping_missing_gap": 0,
+   "windows_crossing_trial_start_or_cue": 0,
+   "trial_start_spacing_s[min,median,max]": [
+    7.58,
+    8.032,
+    9.312
+   ]
+  },
+  {
+   "recording": "S07T",
+   "n_trials": 133,
+   "window_start_after_trial_start_s[min,median,max]": [
+    0.5,
+    0.5,
+    0.5
+   ],
+   "window_end_before_cue_s[min,median,max]": [
+    0.5,
+    0.5,
+    0.5
+   ],
+   "window_start_after_previous_imagery_end_s[min,median,max]": [
+    2.08,
+    2.532,
+    2.98
+   ],
+   "windows_overlapping_missing_gap": 0,
+   "windows_crossing_trial_start_or_cue": 0,
+   "trial_start_spacing_s[min,median,max]": [
+    7.58,
+    8.032,
+    9.312
+   ]
+  },
+  {
+   "recording": "S07E",
+   "n_trials": 140,
+   "window_start_after_trial_start_s[min,median,max]": [
+    0.5,
+    0.5,
+    0.5
+   ],
+   "window_end_before_cue_s[min,median,max]": [
+    0.5,
+    0.5,
+    0.5
+   ],
+   "window_start_after_previous_imagery_end_s[min,median,max]": [
+    2.08,
+    2.516,
+    2.98
+   ],
+   "windows_overlapping_missing_gap": 0,
+   "windows_crossing_trial_start_or_cue": 0,
+   "trial_start_spacing_s[min,median,max]": [
+    7.58,
+    8.032,
+    9.312
+   ]
+  },
+  {
+   "recording": "S08T",
+   "n_trials": 132,
+   "window_start_after_trial_start_s[min,median,max]": [
+    0.5,
+    0.5,
+    0.5
+   ],
+   "window_end_before_cue_s[min,median,max]": [
+    0.5,
+    0.5,
+    0.5
+   ],
+   "window_start_after_previous_imagery_end_s[min,median,max]": [
+    2.08,
+    2.516,
+    2.98
+   ],
+   "windows_overlapping_missing_gap": 0,
+   "windows_crossing_trial_start_or_cue": 0,
+   "trial_start_spacing_s[min,median,max]": [
+    7.58,
+    8.032,
+    9.312
+   ]
+  },
+  {
+   "recording": "S08E",
+   "n_trials": 134,
+   "window_start_after_trial_start_s[min,median,max]": [
+    0.5,
+    0.5,
+    0.5
+   ],
+   "window_end_before_cue_s[min,median,max]": [
+    0.5,
+    0.5,
+    0.5
+   ],
+   "window_start_after_previous_imagery_end_s[min,median,max]": [
+    2.08,
+    2.532,
+    2.98
+   ],
+   "windows_overlapping_missing_gap": 0,
+   "windows_crossing_trial_start_or_cue": 0,
+   "trial_start_spacing_s[min,median,max]": [
+    7.58,
+    8.032,
+    9.312
+   ]
+  },
+  {
+   "recording": "S09T",
+   "n_trials": 116,
+   "window_start_after_trial_start_s[min,median,max]": [
+    0.5,
+    0.5,
+    0.5
+   ],
+   "window_end_before_cue_s[min,median,max]": [
+    0.5,
+    0.5,
+    0.5
+   ],
+   "window_start_after_previous_imagery_end_s[min,median,max]": [
+    2.08,
+    2.532,
+    2.98
+   ],
+   "windows_overlapping_missing_gap": 0,
+   "windows_crossing_trial_start_or_cue": 0,
+   "trial_start_spacing_s[min,median,max]": [
+    7.58,
+    8.032,
+    9.312
+   ]
+  },
+  {
+   "recording": "S09E",
+   "n_trials": 130,
+   "window_start_after_trial_start_s[min,median,max]": [
+    0.5,
+    0.5,
+    0.5
+   ],
+   "window_end_before_cue_s[min,median,max]": [
+    0.5,
+    0.5,
+    0.5
+   ],
+   "window_start_after_previous_imagery_end_s[min,median,max]": [
+    2.08,
+    2.516,
+    2.98
+   ],
+   "windows_overlapping_missing_gap": 0,
+   "windows_crossing_trial_start_or_cue": 0,
+   "trial_start_spacing_s[min,median,max]": [
+    7.58,
+    8.032,
+    9.312
+   ]
+  }
+ ]
+}

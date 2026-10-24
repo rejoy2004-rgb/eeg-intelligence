@@ -1,0 +1,29 @@
+{
+ "current_class_given_previous_class_counts": {
+  "0": {
+   "1.0": 218,
+   "2.0": 313
+  },
+  "1": {
+   "1.0": 286,
+   "2.0": 248
+  }
+ },
+ "n_trials_with_LR_previous": 1065,
+ "decoding_previous_class": [
+  {
+   "protocol": "cross_session",
+   "mean": 0.6014817141165544,
+   "sd": 0.14574452314388245,
+   "p_wilcoxon": 0.1640625,
+   "n_participants": 9
+  },
+  {
+   "protocol": "loso",
+   "mean": 0.5716391228268636,
+   "sd": 0.07997402196817782,
+   "p_wilcoxon": 0.02734375,
+   "n_participants": 9
+  }
+ ]
+}
